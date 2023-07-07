@@ -1,0 +1,10 @@
+*,html{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 80%;
+    background: #554348;
+    margin: 0 auto;
+}
