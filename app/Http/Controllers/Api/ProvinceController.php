@@ -10,7 +10,7 @@ class ProvinceController extends Controller
 {
     public function index()
     {
-        return Province::with("districts.neighborhoods")->get();
+        return Province::with("districts.neighborhoods")->orderByDesc("id")->get();
     }
 
     public function store(Request $request)

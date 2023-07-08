@@ -21,7 +21,7 @@
 <body class="bg-dark">
     <div class="border mx-auto p-3" style="width: 60%;">
         <h1 class="text-white">Categories</h1>
-        <div action="">
+        <form action="">
             <div class="form-group">
                 <label for="mainInput" class="mb-2">Enter Main Category:</label>
                 <div class="d-flex">
@@ -33,7 +33,7 @@
             <h4>All Categories</h4>
 
             <div id="address"></div>
-        </div>
+        </form>
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->

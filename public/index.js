@@ -2,11 +2,13 @@ import { Address } from "./Address.js";
 
 
 $(document).ready(function () {
-
   const address = new Address();
 
   address.fillAddress();
 
-  $("#submitMainInput").click(() => address.addAddress());
+  $("form").submit(async (e) => {
+    e.preventDefault();
+    await  address.submitAddress();
+  });
 });
 

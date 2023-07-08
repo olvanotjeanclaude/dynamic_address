@@ -14,6 +14,6 @@ class District extends Model
 
     public function neighborhoods()
     {
-        return $this->hasMany(Neighborhood::class);
+        return $this->hasMany(Neighborhood::class)->orderByDesc("id");
     }
 }

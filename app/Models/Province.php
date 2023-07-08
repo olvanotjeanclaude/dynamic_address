@@ -13,6 +13,6 @@ class Province extends Model
 
     public function districts()
     {
-        return $this->hasMany(District::class);
+        return $this->hasMany(District::class)->orderByDesc("id");
     }
 }

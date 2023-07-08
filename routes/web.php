@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,6 +13,18 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get("clear_cache", function () {
+    Artisan::call("optimize:clear");
+
+    echo "Cache cleared";
+});
+
+Route::get("refresh-database", function () {
+    Artisan::call("migrate:refresh");
+
+    return redirect("/");
+});
 
 Route::get('/', function () {
     return view('welcome');

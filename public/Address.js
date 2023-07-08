@@ -15,7 +15,7 @@ export class Address {
         this.addresses = await $.get("/api/provinces");
     }
 
-    async addAddress() {
+    async submitAddress() {
         const input = $("#mainInput").val();
 
         try {
